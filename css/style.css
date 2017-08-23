@@ -173,6 +173,112 @@ h2 {
     margin-right: 10px;
 }
 
+.speakers-head {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.speakers-head h2 {
+    color: #6a7079;
+}
+
+.speakers h3 {
+    color: #777a7d;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.item > div {
+    position: relative;
+}
+
+.front {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    /*---for IE--*/
+    left: 50%;
+    margin-left: -70px;
+}
+
+.back {
+    width: 140px;
+    height: 140px;
+    background: #6bd8d3;
+    display: inline-block;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.back i {
+    line-height: 140px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.item > div:hover .front {
+    opacity: .2;
+}
+
+.item > div:hover .back {
+    opacity: 1;
+}
+
+.item > div:hover h3 {
+    color: #6bd8d3;;
+}
+
+
+.speakers-footer {
+    margin-top: 70px; 
+}
+
+/*--------------------Events--------------------------*/
+
+#events {
+    padding: 90px 0;
+}
+
+.link {
+    text-transform: uppercase;
+}
+
+.time {
+    background: #2cc7c1;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 2px;
+    margin-right: 25px;
+}
+
+.collapse-link {
+    color: #747a84;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.collapse-link:hover {
+    color: #747a84;
+}
+
+.collapse-state {
+    color: #2cc7c1;
+}
+
+.collapse p {
+    color: #999;
+}
+
+.tab-collapse {
+    margin-bottom: 20px;
+}
+
+
+
 
 
 /* Large Devices, Wide Screens */
@@ -182,7 +288,18 @@ h2 {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	#speakers {
+	    padding: 30px 0;
+	}
 	
+	.speakers-head,
+	.speakers-footer {
+	    margin: 20px 0;
+	}
+	
+	.row-item-col {
+	    margin-top: 20px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -206,9 +323,15 @@ h2 {
 	.section-btn {
 	    font-size: 15px;
 	}
+	
+	.item-col {
+	    margin: 20px 0;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+    .item-col {
+	    margin: 20px 0;
+	}
 }
